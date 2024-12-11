@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <h3>Paneer and Peas</h3>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/Menu">Menu</a>
+            <a href="/Contact">Contact</a>
+            <a href="/Login">Login</a>
+        </nav>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Paneer and Peas</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿@page
+@model PaneerandPeas_J110892.Pages.MenuModel
+@{
+}
+<br />
+<h2>Menu List</h2>
+<table border="1">
+    <thead>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var menul in Model.listMenu)
+        {
+            <tr>
+                <td>@menul.Id</td>
+                <td>@menul.Name</td>
+                <td>@menul.Description</td>
+                <td>@menul.Price</td>
+            </tr>
+        }
+        
+    </tbody>
+
+</table>

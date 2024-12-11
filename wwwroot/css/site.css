@@ -1,0 +1,45 @@
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 16px;
+    background-color: green;
+}
+
+header nav a {
+        color: #fff;
+        margin: 0 20px;
+        text-decoration: none;
+}
+
+header nav a:hover {
+            color: aqua;
+}
+
+.main {
+    margin: 40px;
+}
+.main h1 {
+        font-size: 50px;
+}
+
+footer {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
