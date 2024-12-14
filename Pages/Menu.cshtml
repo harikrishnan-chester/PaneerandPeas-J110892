@@ -1,29 +1,30 @@
 ﻿@page
-@model PaneerandPeas_J110892.Pages.MenuModel
+@model MenuModel
 @{
+    ViewData["Title"] = "Menu";
 }
-<br />
-<h2>Menu List</h2>
-<table border="1">
+
+<h1>Our Menu</h1>
+
+<table class="table" border="1">
     <thead>
         <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var menul in Model.listMenu)
-        {
-            <tr>
-                <td>@menul.Id</td>
-                <td>@menul.Name</td>
-                <td>@menul.Description</td>
-                <td>@menul.Price</td>
-            </tr>
-        }
+        
+            @foreach (var item in Model.FoodItems)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Description</td>
+                    <td>£@item.Price</td>
+                </tr>
+            }
+        
         
     </tbody>
-
 </table>

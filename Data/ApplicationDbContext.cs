@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace PaneerandPeas_J110892.Data
 {
@@ -9,18 +9,8 @@ namespace PaneerandPeas_J110892.Data
         {
         }
 
-        public DbSet<MenuItem> MenuItems { get; set; }
+        public DbSet<FoodItem> FoodItems { get; set; }
     }
 
-    public class MenuItem
-    {
-        public int Id { get; set; } // Primary Key
-        public string Name { get; set; } // Name of the menu item
-        public string Description { get; set; } // Description of the menu item
-        public decimal Price { get; set; } // Price of the menu item
-    }
-}
-
-
-
+    
 }
