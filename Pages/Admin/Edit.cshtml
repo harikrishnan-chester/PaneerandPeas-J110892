@@ -1,0 +1,21 @@
+﻿@page "{id:int}"
+@model PaneerandPeas_J110892.Pages.EditModel
+
+<h1>Edit Menu Item</h1>
+
+<form method="post">
+    <input type="hidden" name="FoodItem.Id" value="@Model.FoodItem.Id" />
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="FoodItem.Name" value="@Model.FoodItem.Name" required />
+    </div>
+    <div>
+        <label for="description">Description</label>
+        <textarea id="description" name="FoodItem.Description" required>@Model.FoodItem.Description</textarea>
+    </div>
+    <div>
+        <label for="price">Price</label>
+        <input type="number" id="price" name="FoodItem.Price" value="@Model.FoodItem.Price"  required />
+    </div>
+    <button type="submit">Save</button>
+</form>

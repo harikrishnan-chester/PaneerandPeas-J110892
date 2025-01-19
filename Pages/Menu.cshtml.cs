@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using PaneerandPeas_J110892.Data;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 
 public class MenuModel : PageModel
 {
@@ -18,8 +17,10 @@ public class MenuModel : PageModel
 
     public void OnGet()
     {
-        FoodItems = _context.FoodItems
-            .FromSqlRaw("SELECT Id, Name, Description, Price FROM FoodItem")
+       
+        FoodItems = _context.FoodItem
+            .AsNoTracking() 
+            .OrderByDescending(f => f.Id) 
             .ToList();
     }
 }

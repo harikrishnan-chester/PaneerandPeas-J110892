@@ -8,7 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\NewFolder\**" />
+    <Content Remove="Pages\NewFolder\**" />
+    <EmbeddedResource Remove="Pages\NewFolder\**" />
+    <None Remove="Pages\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Data\AssemblyInfo.cs" />
+    <Compile Remove="Pages\Admin.cs" />
+    <Compile Remove="Pages\Admin\Create.cshtml.cs" />
+    <Compile Remove="Pages\Admin\Index.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Admin\Create.cshtml" />
+    <Content Remove="Pages\Admin\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,10 +44,19 @@
     <Folder Include="Data\" />
     <Folder Include="NewFolder2\" />
     <Folder Include="NewFolder\" />
+    <Folder Include="Pages\NewFolder1\" />
   </ItemGroup>
 
   <ItemGroup>
     <EditorConfigFiles Remove="C:\Users\91964\source\repos\PaneerandPeas-J110892\Data\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Admin\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Admin\Index.cshtml" />
   </ItemGroup>
 
 </Project>

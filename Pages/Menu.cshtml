@@ -5,13 +5,15 @@
 }
 
 <h1>Our Menu</h1>
+<a href="/Admin/Createe" class="btn btn-primary" style="margin-bottom: 15px;">Create Dish</a>
 
-<table class="table" border="1">
+<table class="table" border="1" margin="100px">
     <thead>
         <tr>
             <th>Name</th>
             <th>Description</th>
             <th>Price</th>
+            
         </tr>
     </thead>
     <tbody>
@@ -22,6 +24,10 @@
                     <td>@item.Name</td>
                     <td>@item.Description</td>
                     <td>£@item.Price</td>
+                    <td>
+                        <a href="/Admin/Edit/@item.Id">Edit</a>
+                        <a href="/Admin/Delete?id=@item.Id">Delete</a>
+                    </td>
                 </tr>
             }
         

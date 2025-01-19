@@ -9,7 +9,7 @@ namespace PaneerandPeas_J110892.Data
         {
         }
 
-        public DbSet<FoodItem> FoodItems { get; set; }
+        public DbSet<FoodItem> FoodItem { get; set; }
     }
 
     
